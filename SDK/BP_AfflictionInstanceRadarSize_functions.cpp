@@ -1,0 +1,61 @@
+// LEAP (1.X) SDK
+
+#ifdef _MSC_VER
+	#pragma pack(push, 0x8)
+#endif
+
+#include "BP_AfflictionInstanceRadarSize_classes.hpp"
+
+namespace SDK
+{
+//---------------------------------------------------------------------------
+//Functions
+//---------------------------------------------------------------------------
+
+// Function BP_AfflictionInstanceRadarSize.BP_AfflictionInstanceRadarSize_C.K2_ApplyModifier
+// (FUNC_Event, FUNC_Protected, FUNC_BlueprintEvent)
+
+void UBP_AfflictionInstanceRadarSize_C::K2_ApplyModifier()
+{
+	static UFunction* fn = UObject::FindObject<UFunction>(_xor_("Function BP_AfflictionInstanceRadarSize.BP_AfflictionInstanceRadarSize_C.K2_ApplyModifier"));
+
+	struct
+	{
+	} params = {};
+
+
+	if (fn)
+	{
+		UObject::ProcessEvent(fn, &params);
+	}
+}
+
+
+// Function BP_AfflictionInstanceRadarSize.BP_AfflictionInstanceRadarSize_C.ExecuteUbergraph_BP_AfflictionInstanceRadarSize
+// (FUNC_Final)
+// Parameters:
+// int                            EntryPoint                     (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData, CPF_NoDestructor, CPF_HasGetValueTypeHash)
+
+void UBP_AfflictionInstanceRadarSize_C::ExecuteUbergraph_BP_AfflictionInstanceRadarSize(int EntryPoint)
+{
+	static UFunction* fn = UObject::FindObject<UFunction>(_xor_("Function BP_AfflictionInstanceRadarSize.BP_AfflictionInstanceRadarSize_C.ExecuteUbergraph_BP_AfflictionInstanceRadarSize"));
+
+	struct
+	{
+		int                            EntryPoint;
+	} params = {};
+
+	params.EntryPoint = EntryPoint;
+
+	if (fn)
+	{
+		UObject::ProcessEvent(fn, &params);
+	}
+}
+
+
+}
+
+#ifdef _MSC_VER
+	#pragma pack(pop)
+#endif

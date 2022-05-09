@@ -1,0 +1,61 @@
+// LEAP (1.X) SDK
+
+#ifdef _MSC_VER
+	#pragma pack(push, 0x8)
+#endif
+
+#include "W_PartyChatMessage_classes.hpp"
+
+namespace SDK
+{
+//---------------------------------------------------------------------------
+//Functions
+//---------------------------------------------------------------------------
+
+// Function W_PartyChatMessage.W_PartyChatMessage_C.Construct
+// (FUNC_BlueprintCosmetic, FUNC_Event, FUNC_Public, FUNC_BlueprintEvent)
+
+void UW_PartyChatMessage_C::Construct()
+{
+	static UFunction* fn = UObject::FindObject<UFunction>(_xor_("Function W_PartyChatMessage.W_PartyChatMessage_C.Construct"));
+
+	struct
+	{
+	} params = {};
+
+
+	if (fn)
+	{
+		UObject::ProcessEvent(fn, &params);
+	}
+}
+
+
+// Function W_PartyChatMessage.W_PartyChatMessage_C.ExecuteUbergraph_W_PartyChatMessage
+// (FUNC_Final)
+// Parameters:
+// int                            EntryPoint                     (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData, CPF_NoDestructor, CPF_HasGetValueTypeHash)
+
+void UW_PartyChatMessage_C::ExecuteUbergraph_W_PartyChatMessage(int EntryPoint)
+{
+	static UFunction* fn = UObject::FindObject<UFunction>(_xor_("Function W_PartyChatMessage.W_PartyChatMessage_C.ExecuteUbergraph_W_PartyChatMessage"));
+
+	struct
+	{
+		int                            EntryPoint;
+	} params = {};
+
+	params.EntryPoint = EntryPoint;
+
+	if (fn)
+	{
+		UObject::ProcessEvent(fn, &params);
+	}
+}
+
+
+}
+
+#ifdef _MSC_VER
+	#pragma pack(pop)
+#endif

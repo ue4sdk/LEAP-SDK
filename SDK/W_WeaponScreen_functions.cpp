@@ -1,0 +1,384 @@
+// LEAP (1.X) SDK
+
+#ifdef _MSC_VER
+	#pragma pack(push, 0x8)
+#endif
+
+#include "W_WeaponScreen_classes.hpp"
+
+namespace SDK
+{
+//---------------------------------------------------------------------------
+//Functions
+//---------------------------------------------------------------------------
+
+// Function W_WeaponScreen.W_WeaponScreen_C.ValidCosmeticSlot
+// (FUNC_Public, FUNC_HasOutParms, FUNC_BlueprintCallable, FUNC_BlueprintEvent, FUNC_BlueprintPure)
+// Parameters:
+// EEquipSlot                     RowName                        (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData, CPF_NoDestructor, CPF_HasGetValueTypeHash)
+// bool                           FoundCosmetics                 (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_IsPlainOldData, CPF_NoDestructor)
+
+void UW_WeaponScreen_C::ValidCosmeticSlot(EEquipSlot RowName, bool* FoundCosmetics)
+{
+	static UFunction* fn = UObject::FindObject<UFunction>(_xor_("Function W_WeaponScreen.W_WeaponScreen_C.ValidCosmeticSlot"));
+
+	struct
+	{
+		EEquipSlot                     RowName;
+		bool                           FoundCosmetics;
+	} params = {};
+
+	params.RowName = RowName;
+
+	if (fn)
+	{
+		UObject::ProcessEvent(fn, &params);
+	}
+
+	if (FoundCosmetics != nullptr)
+		*FoundCosmetics = params.FoundCosmetics;
+}
+
+
+// Function W_WeaponScreen.W_WeaponScreen_C.Construct
+// (FUNC_BlueprintCosmetic, FUNC_Event, FUNC_Public, FUNC_BlueprintEvent)
+
+void UW_WeaponScreen_C::Construct()
+{
+	static UFunction* fn = UObject::FindObject<UFunction>(_xor_("Function W_WeaponScreen.W_WeaponScreen_C.Construct"));
+
+	struct
+	{
+	} params = {};
+
+
+	if (fn)
+	{
+		UObject::ProcessEvent(fn, &params);
+	}
+}
+
+
+// Function W_WeaponScreen.W_WeaponScreen_C.InitWeapon
+// (FUNC_BlueprintCallable, FUNC_BlueprintEvent)
+// Parameters:
+// class UClass* /*UWeaponInstance*/ Weapon                         (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData, CPF_NoDestructor, CPF_HasGetValueTypeHash)
+// class UClass* /*AProjectXCharacter*/ Player_Class                   (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData, CPF_NoDestructor, CPF_HasGetValueTypeHash)
+// EEquipSlot                     EquipSlot                      (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData, CPF_NoDestructor, CPF_HasGetValueTypeHash)
+
+void UW_WeaponScreen_C::InitWeapon(class UClass* /*UWeaponInstance*/ Weapon, class UClass* /*AProjectXCharacter*/ Player_Class, EEquipSlot EquipSlot)
+{
+	static UFunction* fn = UObject::FindObject<UFunction>(_xor_("Function W_WeaponScreen.W_WeaponScreen_C.InitWeapon"));
+
+	struct
+	{
+		class UClass* /*UWeaponInstance*/ Weapon;
+		class UClass* /*AProjectXCharacter*/ Player_Class;
+		EEquipSlot                     EquipSlot;
+	} params = {};
+
+	params.Weapon = Weapon;
+	params.Player_Class = Player_Class;
+	params.EquipSlot = EquipSlot;
+
+	if (fn)
+	{
+		UObject::ProcessEvent(fn, &params);
+	}
+}
+
+
+// Function W_WeaponScreen.W_WeaponScreen_C.BndEvt__W_CosmeticItemListGrid_K2Node_ComponentBoundEvent_2_ItemClicked__DelegateSignature
+// (FUNC_BlueprintEvent)
+// Parameters:
+// struct FString                 ItemId                         (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_Parm, CPF_ZeroConstructor, CPF_HasGetValueTypeHash)
+// ECosmeticType                  Type                           (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData, CPF_NoDestructor, CPF_HasGetValueTypeHash)
+// struct FString                 WeaponID                       (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_Parm, CPF_ZeroConstructor, CPF_HasGetValueTypeHash)
+// unsigned char                  Slot                           (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData, CPF_NoDestructor, CPF_HasGetValueTypeHash)
+// class UW_ArmoryIcon_C*         NewParam                       (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_Parm, CPF_ZeroConstructor, CPF_InstancedReference, CPF_IsPlainOldData, CPF_NoDestructor, CPF_HasGetValueTypeHash)
+
+void UW_WeaponScreen_C::BndEvt__W_CosmeticItemListGrid_K2Node_ComponentBoundEvent_2_ItemClicked__DelegateSignature(const struct FString& ItemId, ECosmeticType Type, const struct FString& WeaponID, unsigned char Slot, class UW_ArmoryIcon_C* NewParam)
+{
+	static UFunction* fn = UObject::FindObject<UFunction>(_xor_("Function W_WeaponScreen.W_WeaponScreen_C.BndEvt__W_CosmeticItemListGrid_K2Node_ComponentBoundEvent_2_ItemClicked__DelegateSignature"));
+
+	struct
+	{
+		struct FString                 ItemId;
+		ECosmeticType                  Type;
+		struct FString                 WeaponID;
+		unsigned char                  Slot;
+		class UW_ArmoryIcon_C*         NewParam;
+	} params = {};
+
+	params.ItemId = ItemId;
+	params.Type = Type;
+	params.WeaponID = WeaponID;
+	params.Slot = Slot;
+	params.NewParam = NewParam;
+
+	if (fn)
+	{
+		UObject::ProcessEvent(fn, &params);
+	}
+}
+
+
+// Function W_WeaponScreen.W_WeaponScreen_C.EquipCosmeticItem
+// (FUNC_BlueprintCallable, FUNC_BlueprintEvent)
+// Parameters:
+// class UClass* /*AProjectXCharacter*/ CharacterClass                 (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData, CPF_NoDestructor, CPF_UObjectWrapper, CPF_HasGetValueTypeHash)
+// ECosmeticType                  Type                           (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData, CPF_NoDestructor, CPF_HasGetValueTypeHash)
+// struct FString                 CosmeticID                     (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_Parm, CPF_ZeroConstructor, CPF_HasGetValueTypeHash)
+// struct FString                 WeaponName                     (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_Parm, CPF_ZeroConstructor, CPF_HasGetValueTypeHash)
+// class UW_ArmoryIcon_C*         Widget                         (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_Parm, CPF_ZeroConstructor, CPF_InstancedReference, CPF_IsPlainOldData, CPF_NoDestructor, CPF_HasGetValueTypeHash)
+
+void UW_WeaponScreen_C::EquipCosmeticItem(class UClass* /*AProjectXCharacter*/ CharacterClass, ECosmeticType Type, const struct FString& CosmeticID, const struct FString& WeaponName, class UW_ArmoryIcon_C* Widget)
+{
+	static UFunction* fn = UObject::FindObject<UFunction>(_xor_("Function W_WeaponScreen.W_WeaponScreen_C.EquipCosmeticItem"));
+
+	struct
+	{
+		class UClass* /*AProjectXCharacter*/ CharacterClass;
+		ECosmeticType                  Type;
+		struct FString                 CosmeticID;
+		struct FString                 WeaponName;
+		class UW_ArmoryIcon_C*         Widget;
+	} params = {};
+
+	params.CharacterClass = CharacterClass;
+	params.Type = Type;
+	params.CosmeticID = CosmeticID;
+	params.WeaponName = WeaponName;
+	params.Widget = Widget;
+
+	if (fn)
+	{
+		UObject::ProcessEvent(fn, &params);
+	}
+}
+
+
+// Function W_WeaponScreen.W_WeaponScreen_C.BndEvt__W_CosmeticTypesButtonList_K2Node_ComponentBoundEvent_3_OnTypeButtonPressed__DelegateSignature
+// (FUNC_BlueprintEvent)
+// Parameters:
+// struct FString                 CosmeticType                   (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_Parm, CPF_ZeroConstructor, CPF_HasGetValueTypeHash)
+
+void UW_WeaponScreen_C::BndEvt__W_CosmeticTypesButtonList_K2Node_ComponentBoundEvent_3_OnTypeButtonPressed__DelegateSignature(const struct FString& CosmeticType)
+{
+	static UFunction* fn = UObject::FindObject<UFunction>(_xor_("Function W_WeaponScreen.W_WeaponScreen_C.BndEvt__W_CosmeticTypesButtonList_K2Node_ComponentBoundEvent_3_OnTypeButtonPressed__DelegateSignature"));
+
+	struct
+	{
+		struct FString                 CosmeticType;
+	} params = {};
+
+	params.CosmeticType = CosmeticType;
+
+	if (fn)
+	{
+		UObject::ProcessEvent(fn, &params);
+	}
+}
+
+
+// Function W_WeaponScreen.W_WeaponScreen_C.BndEvt__btn_Back_K2Node_ComponentBoundEvent_1_Clicked__DelegateSignature
+// (FUNC_BlueprintEvent)
+// Parameters:
+// struct FString                 ID                             (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_Parm, CPF_ZeroConstructor, CPF_HasGetValueTypeHash)
+// struct FString                 Name                           (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_Parm, CPF_ZeroConstructor, CPF_HasGetValueTypeHash)
+// ECosmeticType                  Type                           (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData, CPF_NoDestructor, CPF_HasGetValueTypeHash)
+// class UClass* /*UUserWidget*/  Widget                         (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData, CPF_NoDestructor, CPF_HasGetValueTypeHash)
+
+void UW_WeaponScreen_C::BndEvt__btn_Back_K2Node_ComponentBoundEvent_1_Clicked__DelegateSignature(const struct FString& ID, const struct FString& Name, ECosmeticType Type, class UClass* /*UUserWidget*/ Widget)
+{
+	static UFunction* fn = UObject::FindObject<UFunction>(_xor_("Function W_WeaponScreen.W_WeaponScreen_C.BndEvt__btn_Back_K2Node_ComponentBoundEvent_1_Clicked__DelegateSignature"));
+
+	struct
+	{
+		struct FString                 ID;
+		struct FString                 Name;
+		ECosmeticType                  Type;
+		class UClass* /*UUserWidget*/  Widget;
+	} params = {};
+
+	params.ID = ID;
+	params.Name = Name;
+	params.Type = Type;
+	params.Widget = Widget;
+
+	if (fn)
+	{
+		UObject::ProcessEvent(fn, &params);
+	}
+}
+
+
+// Function W_WeaponScreen.W_WeaponScreen_C.ForceWeaponInfoSelection
+// (FUNC_BlueprintCallable, FUNC_BlueprintEvent)
+
+void UW_WeaponScreen_C::ForceWeaponInfoSelection()
+{
+	static UFunction* fn = UObject::FindObject<UFunction>(_xor_("Function W_WeaponScreen.W_WeaponScreen_C.ForceWeaponInfoSelection"));
+
+	struct
+	{
+	} params = {};
+
+
+	if (fn)
+	{
+		UObject::ProcessEvent(fn, &params);
+	}
+}
+
+
+// Function W_WeaponScreen.W_WeaponScreen_C.BndEvt__W_CosmeticItemListGrid_K2Node_ComponentBoundEvent_0_ItemHovered__DelegateSignature
+// (FUNC_BlueprintEvent)
+// Parameters:
+// bool                           bHovered                       (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData, CPF_NoDestructor)
+// struct FString                 ItemId                         (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_Parm, CPF_ZeroConstructor, CPF_HasGetValueTypeHash)
+// ECosmeticType                  Type                           (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData, CPF_NoDestructor, CPF_HasGetValueTypeHash)
+// struct FString                 WeaponID                       (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_Parm, CPF_ZeroConstructor, CPF_HasGetValueTypeHash)
+// unsigned char                  Slot                           (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData, CPF_NoDestructor, CPF_HasGetValueTypeHash)
+// class UW_ArmoryIcon_C*         Widget                         (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_Parm, CPF_ZeroConstructor, CPF_InstancedReference, CPF_IsPlainOldData, CPF_NoDestructor, CPF_HasGetValueTypeHash)
+
+void UW_WeaponScreen_C::BndEvt__W_CosmeticItemListGrid_K2Node_ComponentBoundEvent_0_ItemHovered__DelegateSignature(bool bHovered, const struct FString& ItemId, ECosmeticType Type, const struct FString& WeaponID, unsigned char Slot, class UW_ArmoryIcon_C* Widget)
+{
+	static UFunction* fn = UObject::FindObject<UFunction>(_xor_("Function W_WeaponScreen.W_WeaponScreen_C.BndEvt__W_CosmeticItemListGrid_K2Node_ComponentBoundEvent_0_ItemHovered__DelegateSignature"));
+
+	struct
+	{
+		bool                           bHovered;
+		struct FString                 ItemId;
+		ECosmeticType                  Type;
+		struct FString                 WeaponID;
+		unsigned char                  Slot;
+		class UW_ArmoryIcon_C*         Widget;
+	} params = {};
+
+	params.bHovered = bHovered;
+	params.ItemId = ItemId;
+	params.Type = Type;
+	params.WeaponID = WeaponID;
+	params.Slot = Slot;
+	params.Widget = Widget;
+
+	if (fn)
+	{
+		UObject::ProcessEvent(fn, &params);
+	}
+}
+
+
+// Function W_WeaponScreen.W_WeaponScreen_C.ExecuteUbergraph_W_WeaponScreen
+// (FUNC_Final, FUNC_HasDefaults)
+// Parameters:
+// int                            EntryPoint                     (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData, CPF_NoDestructor, CPF_HasGetValueTypeHash)
+
+void UW_WeaponScreen_C::ExecuteUbergraph_W_WeaponScreen(int EntryPoint)
+{
+	static UFunction* fn = UObject::FindObject<UFunction>(_xor_("Function W_WeaponScreen.W_WeaponScreen_C.ExecuteUbergraph_W_WeaponScreen"));
+
+	struct
+	{
+		int                            EntryPoint;
+	} params = {};
+
+	params.EntryPoint = EntryPoint;
+
+	if (fn)
+	{
+		UObject::ProcessEvent(fn, &params);
+	}
+}
+
+
+// Function W_WeaponScreen.W_WeaponScreen_C.ItemSelected__DelegateSignature
+// (FUNC_Public, FUNC_Delegate, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
+// Parameters:
+// bool                           Selected                       (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData, CPF_NoDestructor)
+// ECosmeticType                  Type                           (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData, CPF_NoDestructor, CPF_HasGetValueTypeHash)
+// struct FString                 WeaponID                       (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_Parm, CPF_ZeroConstructor, CPF_HasGetValueTypeHash)
+// unsigned char                  Slot                           (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData, CPF_NoDestructor, CPF_HasGetValueTypeHash)
+// struct FString                 ShortCode                      (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_Parm, CPF_ZeroConstructor, CPF_HasGetValueTypeHash)
+// class UClass* /*AProjectXCharacter*/ NewParam                       (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData, CPF_NoDestructor, CPF_HasGetValueTypeHash)
+
+void UW_WeaponScreen_C::ItemSelected__DelegateSignature(bool Selected, ECosmeticType Type, const struct FString& WeaponID, unsigned char Slot, const struct FString& ShortCode, class UClass* /*AProjectXCharacter*/ NewParam)
+{
+	static UFunction* fn = UObject::FindObject<UFunction>(_xor_("Function W_WeaponScreen.W_WeaponScreen_C.ItemSelected__DelegateSignature"));
+
+	struct
+	{
+		bool                           Selected;
+		ECosmeticType                  Type;
+		struct FString                 WeaponID;
+		unsigned char                  Slot;
+		struct FString                 ShortCode;
+		class UClass* /*AProjectXCharacter*/ NewParam;
+	} params = {};
+
+	params.Selected = Selected;
+	params.Type = Type;
+	params.WeaponID = WeaponID;
+	params.Slot = Slot;
+	params.ShortCode = ShortCode;
+	params.NewParam = NewParam;
+
+	if (fn)
+	{
+		UObject::ProcessEvent(fn, &params);
+	}
+}
+
+
+// Function W_WeaponScreen.W_WeaponScreen_C.TypeSelected__DelegateSignature
+// (FUNC_Public, FUNC_Delegate, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
+// Parameters:
+// ECosmeticType                  CosmeticType                   (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData, CPF_NoDestructor, CPF_HasGetValueTypeHash)
+
+void UW_WeaponScreen_C::TypeSelected__DelegateSignature(ECosmeticType CosmeticType)
+{
+	static UFunction* fn = UObject::FindObject<UFunction>(_xor_("Function W_WeaponScreen.W_WeaponScreen_C.TypeSelected__DelegateSignature"));
+
+	struct
+	{
+		ECosmeticType                  CosmeticType;
+	} params = {};
+
+	params.CosmeticType = CosmeticType;
+
+	if (fn)
+	{
+		UObject::ProcessEvent(fn, &params);
+	}
+}
+
+
+// Function W_WeaponScreen.W_WeaponScreen_C.EquipButtonPressed__DelegateSignature
+// (FUNC_Public, FUNC_Delegate, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
+// Parameters:
+// bool                           NewParam                       (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData, CPF_NoDestructor)
+
+void UW_WeaponScreen_C::EquipButtonPressed__DelegateSignature(bool NewParam)
+{
+	static UFunction* fn = UObject::FindObject<UFunction>(_xor_("Function W_WeaponScreen.W_WeaponScreen_C.EquipButtonPressed__DelegateSignature"));
+
+	struct
+	{
+		bool                           NewParam;
+	} params = {};
+
+	params.NewParam = NewParam;
+
+	if (fn)
+	{
+		UObject::ProcessEvent(fn, &params);
+	}
+}
+
+
+}
+
+#ifdef _MSC_VER
+	#pragma pack(pop)
+#endif
